@@ -95,7 +95,7 @@ Gateway, *HoneyrouterOfTargetSubnet*
 Example:
 Gateway,hr1
 
-One one gateway can exist in a network view.
+Only one gateway can exist in a network view.
 
 ----------------------------------------
 
