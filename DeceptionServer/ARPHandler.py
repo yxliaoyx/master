@@ -18,10 +18,7 @@ class ARPHandler(object):
 
         #check hops
         for r in self.networkview.routes:
-            hopCt=0
-            for hop in r.hops:
-                hopCt+=1
-            hopCt-=2
+            hopCt = len(r.hops) - 2
             if hopCt>0 :
                 self.hostHops[r.endNode.decepted_eth_addr] = hopCt
 
